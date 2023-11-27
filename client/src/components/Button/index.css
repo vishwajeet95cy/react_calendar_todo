@@ -1,0 +1,15 @@
+.button_main {
+  color: #ffc107;
+  background-color: transparent;
+  outline: 0;
+  border: 1px solid #ffc107;
+  padding: 5px 20px;
+  font-size: 0.85rem;
+}
+
+@media screen and (max-width: 600px) {
+  .button_main {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+  }
+}

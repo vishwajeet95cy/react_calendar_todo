@@ -1,0 +1,102 @@
+.calendar_container {
+  display: grid;
+  gap: 0.5rem;
+  padding-inline: 1rem;
+}
+
+.calendar_container_content {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+@media screen and (max-width: 600px) {
+  .calendar_container_content {
+    overflow-y: auto;
+    padding-bottom: 1rem;
+    grid-template-columns: repeat(7, 100px);
+  }
+}
+
+.calendar_container_header {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calendar_container_header_right {
+  justify-self: end;
+}
+
+.calendar_container_header_item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000ff;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.calendar_container_header_item:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border-color: #0000ff;
+  color: #0000ff;
+}
+
+.calendar_item_container {
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+}
+
+.calendar_item_container_item {
+  justify-self: center;
+  display: grid;
+  gap: 1rem;
+}
+
+/*List Item Start*/
+.list_item_done {
+  color: #000;
+  background-color: #008000;
+  outline: 0;
+  border: 1px solid #008000;
+  padding-block: 0.5rem;
+}
+
+.list_item_done h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.list_item_pending {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.list_item_pending_middle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.list_item_pending_left {
+  color: #008000;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.list_item_pending_end {
+  color: #dc143d;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/*List Item Done*/

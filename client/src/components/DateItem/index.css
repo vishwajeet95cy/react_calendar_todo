@@ -1,0 +1,47 @@
+.date_item_container {
+  display: grid;
+  gap: 0.1rem;
+  justify-items: center;
+  align-content: start;
+}
+
+.date_item_container_day p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.date_item_container_date {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.date_item_container_date h4 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.date_item_container_select .date_item_container_date {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+.date_item_container_select .date_item_container_day p {
+  color: #0000ff;
+}
+
+.date_item_container_disabled .date_item_container_date {
+  color: #636262;
+}
+
+.date_item_container_disabled .date_item_container_day p {
+  color: #636262;
+}
